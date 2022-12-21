@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 50px;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(4,200px)/ repeat(2,300px);
+    align-content: center;
+    justify-content: center;
+}

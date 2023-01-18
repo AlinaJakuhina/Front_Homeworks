@@ -32,30 +32,36 @@
 
 
 
+
+// Метод строки split(sep) - преобразовывает строку в массив по разделителю.
+// let string = 'Привет мой друг'
+// console.log(string.split(' '))
+
+
 //3) Задан массив names. 
 // Сформируйте новый массив full_names, элементы которого будут содежрать вложенный массив с именем и фамилией. Если фамилии не окажется - второй элемент должен хранить undefined 
 
 // Пример: 
-// let names = [ 
-// 'Steven King', 
-// 'Jonh Snow', 
-// 'Oliver', 
-// 'Neena Stich',
-// 'Grant Laster', 
-// 'Persius Master', 
-// 'Lest' 
-// ] 
+let names = [ 
+'Steven King', 
+'Jonh Snow', 
+'Oliver', 
+'Neena Stich',
+'Grant Laster', 
+'Persius Master', 
+'Lest' 
+] 
 
 
-// const full_names = names.map(elem => {
-//     if (elem.includes(' ')) {
-//       return elem.split(' ');
-//     } else {
-//       return [elem + ' ' + undefined];
-//     }
-//   }); 
+const full_names = names.map(elem => {
+    if (elem.includes(' ')) {
+      return elem.split(' ');
+    } else {
+      return [elem, undefined];
+    }
+  }); 
 
-// console.log(full_names);
+console.log(full_names);
 
 // Результат: [ 
 // ['Steven','King'], 

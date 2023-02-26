@@ -1,0 +1,30 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.trigger{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: rgba(244, 210, 167, 0.543);
+}
+
+.active{
+    color: orange;
+}

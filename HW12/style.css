@@ -1,0 +1,30 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_rating{
+    display: flex;
+    width: 120px;
+    justify-content: space-around;
+    padding: 10px;
+    color: orange;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border:dotted 1px black;
+    border-radius: 15px;
+    
+
+}

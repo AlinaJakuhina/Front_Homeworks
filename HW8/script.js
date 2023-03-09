@@ -12,6 +12,10 @@
 //          console.log(elems[i])
 // }
 
+// for (let elem in elems){
+//     elems[elem] = elems[elem].slice(elems[elem].indexOf('">')+2, elems[elem].indexOf('</'))
+// }
+// console.log(elems)
 // Результат: ['Home','About','FAQ','Contacts']
 
 
@@ -27,6 +31,15 @@
 // 	return array.map((el) => el.replace(el[0], el[0].toUpperCase()));
 // }
 // console.log(initCap(words));
+
+// function initCap(array){
+//     let newArray = []
+//     for (let elem of array){
+//         newArray.push(elem.slice(0,1).toUpperCase() + elem.slice(1))
+//     }
+//     return newArray
+// }
+// console.log(initCap(words), words)
 
 // Результат: ['Cтакан','Молоко','Табуретка','Вода']
 

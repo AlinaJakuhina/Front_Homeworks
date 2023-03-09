@@ -10,6 +10,17 @@
 // }
 // checkDate();
 
+// function checkDate(){
+//     let dateNow = new Date()
+//     let dateNext = new Date(dateNow.getFullYear(),dateNow.getMonth() + 1, 0)
+//     // let result = (dateNext.getTime() - dateNow.getTime()) / (1000 * 60 * 60 * 24)
+//     let result = dateNext.getDate() - dateNow.getDate()
+//     // console.log(Math.floor(result))
+//     console.log(result)
+// }
+
+// checkDate()
+
 // 2. Создайте функцию isItFridayToday(), которая выводит сообщение согласно условию:
 // 1) Если текущая дата определит пятницу, функция должна в консоль отобразить ответ “Сегодня пятница”!
 // 2)Если пятница была вчера - “Пятница была вчера”
@@ -34,6 +45,23 @@
 //     }
 //   }
 //   isItFridayToday()
+
+// function isItFridayToday(){
+//     let day = new Date().getDay()
+//     let array = [
+//         'Пятница будет через 5 дней', 
+//         'Пятница будет через 4 дня', 
+//         'Пятница будет через 3 дня', 
+//         'Пятница будет через 2 дня',
+//         'Завтра будет пятница!',
+//         'Сегодня пятница!',
+//         'Вчера была пятница!'
+//     ]
+//     console.log(array[day])
+// }
+
+// isItFridayToday()
+
 
 
 
@@ -66,16 +94,16 @@
 
 
 // 4.  Задан массив arrays. Сформируйте два новых массива phones и emails, которые будут содержать данные по примеру: 
-let arrays = [ 
-'89840959944 exampleonemain@mail.ru', 
-'+79840959933 forreason@yandex.net', 
-'somemail@mail.ru', 
-'89840959900 example@gmil.ru', 
-'+79840959911', 
-'grandthere@mail.ru',
-'jetpackfor@gmail.ru',
- '89840959922 some@yandex.com',
-] 
+// let arrays = [ 
+// '89840959944 exampleonemain@mail.ru', 
+// '+79840959933 forreason@yandex.net', 
+// 'somemail@mail.ru', 
+// '89840959900 example@gmil.ru', 
+// '+79840959911', 
+// 'grandthere@mail.ru',
+// 'jetpackfor@gmail.ru',
+//  '89840959922 some@yandex.com',
+// ] 
 
 // let phones = [];
 // let emails = [];
@@ -91,10 +119,22 @@ let arrays = [
 //   }
 // });
 
+// arrays.forEach( elem => {
+//     let row = elem.split(' ')
+//     if (row.length == 2){
+//         phones.push(row[0])
+//         emails.push(row[1])
+//     } else {
+//         if (elem.includes('@')){
+//             emails.push(elem)
+//         } else {
+//             phones.push(elem)
+//         }
+//     }
+// })
+
 // console.log(phones);
 // console.log(emails);
-
-
 
 // Результат: ['89840959944','+79840959933','89840959900','+79840959911','89840959922'] ['exampleonemain@mail.ru','forreason@yandex.net','somemail@mail.ru','example@gmil.ru','grandthere@mail.ru','jetpackfor@gmail.ru','some@yandex.com']
 
@@ -119,6 +159,9 @@ let arrays = [
 //   });
 // console.log(encryptedCards);
   
+
+// phones = phones.map(elem => elem.replace(elem.slice(4,-4), '*'.repeat(5)))
+// console.log(phones)
 
 // Результат: [
 // '4000*****9499',

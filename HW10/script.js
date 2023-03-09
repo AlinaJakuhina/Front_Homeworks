@@ -27,12 +27,16 @@
 // function getAvg(nums) {
 //     return nums.reduce((a, b) => (a + b)) / nums.length;
 // }
-
-//   console.log(getAvg(numbers));
-
-// Результат:3
+// console.log(getAvg(numbers)); // Результат:3
 
 
+// function getAvg() {
+//     let sum = 0
+//     for (let elem of array){
+//         sum = sum + elem
+//     }
+//     return sum / array.lenght
+// }
 
 
 // 3.Создайте функцию countString(), которая получает массив в качестве аргумента.
@@ -50,6 +54,9 @@
 //   console.log(`Количество элементов: ${count}`);
 // }
 // countString(array);
+
+
+
 
 // Результат: 3
 
@@ -77,14 +84,15 @@
 // Ключ элемента должен содержать его порядковый номер, в качестве значения взять строку ‘keyN’, где N - это порядковый номер.
 // Количество сво-тв должно быть равным количеству элементов массива
 
-Пример: 
+// Пример: 
 array = [1,true,'3','value1',9,'key']
-const obj = Object.assign({}, array)
 
+let obj = {}
+for ( let i = 0; i < array.lenght; i++){
+    obj[`ke${i}`] = array[i]
+}
 console.log(obj);
 
-
-Не могу найти решения 
 
 // Результат: 
 // 	{

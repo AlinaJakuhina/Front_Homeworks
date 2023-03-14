@@ -48,10 +48,70 @@ function colorDots(slider_index){
     }
 }}
     
+// ----------------
+
+let slideWidth = 1110
+sliderCount = 0
+
+let clientsSliderList = document.querySelectorAll('.slaider_clients')
+  
+let clients_line = document.querySelector('.slider_line')
+let clients_btn_next = document.querySelector('.b_slider_prev')
+let clients_btn_prev = document.querySelector('.b_slider_next')
+
+let clients_dotList = document.querySelectorAll('.client_dot')
+let clients_dot_color = 'rgba(0, 95, 163, .4)'
+let clients_dot_active_color = 'rgba(0, 95, 163, 1)'
 
 
-let clients_dot_list = document.querySelectorAll('.client_dot')
 
+function changeSlide(dotList, slider_line, btn_next, btn_prev, dot_color, dot_active_color) {
+    for (let i = 0; i < 4; i++) {
+      dotList[i].addEventListener('click', () => {
+        sliderCount = i
+        setDot(i)
+        slider_line.style.transform = `translateX(${-1 * slideWidth * sliderCount}px)`
+      })
+    }
+  
+    btn_next.addEventListener('click', go_right)
+    btn_prev.addEventListener('click', go_left)
+  
+    function go_right() {
+      sliderCount++
+      if (sliderCount >= 4) {
+        sliderCount = 0
+      }
+      slider_line.style.transform = `translateX(${-1 * slideWidth * sliderCount}px)`
+      setDot(sliderCount)
+    }
+  
+
+    function go_left() {
+      sliderCount--
+      if (sliderCount < 0) {
+        sliderCount = 3
+      }
+      slider_line.style.transform = `translateX(${-1 * slideWidth * sliderCount}px)`
+      setDot(sliderCount)
+    }
+  
+    function setDot(sliderCount) {
+      for (let i = 0; i < 4; i++) {
+        dotList[i].style.background = dot_color
+      }
+      dotList[sliderCount].style.background = dot_active_color
+    }
+  }
+
+
+  changeSlide(clients_dotList, clients_line, clients_btn_next, clients_btn_prev, clients_dot_color, clients_dot_active_color)
+  // ===================================================================
+
+  
+  
+
+  
 
 
 // const images = document.querySelectorAll('.slaider_clients .slider_line img')

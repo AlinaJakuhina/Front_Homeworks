@@ -1,0 +1,17 @@
+.items{
+    padding-top: 94px;
+    padding-left: 70px;
+    width: 480px;
+    height: 480px;
+    box-sizing: border-box;
+}
+.items_text{
+    font-size: 32px;
+    font-style: italic;
+    color: #ffffff;
+    padding-top: 30px;
+    border-top: 2px solid #ffffff;
+    font-weight: 400;
+    width: 340px;
+}
+

@@ -1,0 +1,26 @@
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    
+}
+
+.li_item{
+ cursor: pointer;   
+ font-size: 14px;
+ color: black;
+ font-weight: 400;
+}
+
+.li_active{
+color: black;
+text-decoration: none;
+}
+
+.li_active{
+    border-bottom: 2px solid rgba(0, 82, 193, 1);
+    padding-bottom: 5px;
+}
+
+

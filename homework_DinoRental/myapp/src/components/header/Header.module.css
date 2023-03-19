@@ -1,0 +1,26 @@
+.img_logo{
+    width: 118px;
+    height: 119px; 
+}
+
+.btn_header{
+    background-color: rgba(249, 182, 64, 1) ;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    font-family: ABeeZee, italic;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-left: 167px;
+    padding-right: 163px;
+    background: #F4F9E2;
+    
+}

@@ -1,0 +1,20 @@
+.rental_section{
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    height: 800px;
+}
+
+.rental_title{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    color:  rgba(34, 53, 111, 1);
+    font-family: ABeeZee; 
+    padding-left: 67px;
+    padding-top: 267px;
+}
+
+
+.rental_text{
+ padding-top: 49px;
+}

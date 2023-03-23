@@ -1,0 +1,36 @@
+.btn_item button{
+    margin: 10px;
+    border: 1px solid grey;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card{
+    margin: 20px;
+    border: 2px solid gray;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(215, 229, 185);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+.btn_item{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

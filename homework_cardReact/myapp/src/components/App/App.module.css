@@ -1,0 +1,13 @@
+.btn_app{
+    margin: 15px;
+    border: 1px solid grey;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}

@@ -1,0 +1,35 @@
+.close_btn{
+    background-color: #e74c3c;
+    color: black;
+    height: 28px;
+    width: 28px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    top: -13px;
+    right: -12px;
+    font-size: 20px;
+}
+
+.todo_wrapper:hover .close_btn{
+   opacity: 1;
+}
+
+
+.todo_wrapper{
+    background-color: #1ABC9C;
+    color: white;
+    font-weight: 400;
+    width: 252px;
+    height: 39px;
+    position: relative;
+   
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 17px;
+
+}
+

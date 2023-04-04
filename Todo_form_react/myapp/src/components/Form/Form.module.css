@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+
+.wrapper{
+    margin:auto 70px 45px;
+    padding: 30px 70px;
+    background-color: rgba(236, 240, 241, 1);
+    border-radius: 20px;
+
+    font-family:'Inter', sans-serif;
+    font-weight: 400;
+
+    width: 100%;
+}
+
+button{
+    border: 1px solid black;
+    border-radius:23px ;
+    width: 163px;
+    height: 45px;
+
+    color: white;
+    background-color: rgba(26, 188, 156, 1);
+
+    font-size: 20;
+    font-weight: 400;
+    font-family:'Inter', sans-serif;
+}
+
+.sectionForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 520px;
+}
+
+.select_items{
+    display: flex;
+    gap: 32px; 
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+::placeholder{
+    color: black;
+}
+
+select{
+    
+    height: 45px;
+    font-size: 20;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+input{
+   
+    height: 45px;
+    padding: 7px;
+    font-size: 20;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.select_days,
+.select_import{
+    position: relative;
+    width: 100%;
+}
+
+.select_days::after,
+.select_import::after{
+    content: url('media/arrow.png');
+    position: absolute;
+    right: 0;
+    padding: 9px 6px;
+    border-left: 1px solid #000;
+    pointer-events: none;
+    right: 4px;
+    top: 16px;
+    transform: translateY(-33%);
+    
+}
+
+.select_items select{
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+   
+
+}
+
+/* .wrapper:hover{
+    border: rgb(38, 162, 206) 3px solid;
+    cursor: pointer;
+} */

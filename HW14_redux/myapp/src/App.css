@@ -1,0 +1,18 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cart_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .cart_item h3 {
+    margin: 0;
+  }
+  
